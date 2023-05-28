@@ -6,8 +6,8 @@ import { getChainBySlug } from "@thirdweb-dev/chains";
 import "./styles/globals.css";
 
 const urlParams = new URL(window.location.toString()).searchParams;
-//const network = urlParams.get("network") || "ethereum";
-const network = urlParams.get("network") || "goerli";
+const network = urlParams.get("network") || "ethereum";
+//const network = urlParams.get("network") || "goerli";
 
 const activeChain = getChainBySlug(network);
 
